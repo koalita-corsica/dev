@@ -208,11 +208,11 @@ const IndexPage = (props) => {
         <React.Fragment>
           <div className={styles.wrapperAccueil}>
             <div className={styles.section1}>
-              <amp-img
-                src={bo.url}
-                id="bottle"
-                layout="responsive"
-              />
+                <amp-img
+                  src={bo.url}
+                  id="bottle"
+                  layout="responsive"
+                />
               <div
                 className={styles.block1}
                 id="block1"
