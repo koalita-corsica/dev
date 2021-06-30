@@ -11,34 +11,43 @@ $font-subtitle: 25px;
 $font-text: 20px;
 @font-face {
   font-family: "Reislust";
-  src: url("../fonts/Reislust-97D7.ttf");
+  src: local("Reislust"), url("../fonts/Reislust-97D7.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTNormal";
-  src: url("../fonts/FuturaPTBook.otf");
+  src: local("FuturaPTNormal"),
+    url("../fonts/FuturaPTBook.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTMedium";
-  src: url("../fonts/FuturaPTMedium.otf");
+  src: local("FuturaPTMedium"),
+    url("../fonts/FuturaPTMedium.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
-  font-family: "FuturaPTBold";
-  src: url("../fonts/FuturaPTBold.otf");
+  font-family: "FuturaPTbold";
+  src: local("FuturaPTbold"),
+    url("../fonts/FuturaPTBold.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTNormalOblique";
-  src: url("../fonts/FuturaPTBookOblique.otf");
+  src: local("FuturaPTNormalOblique"),
+    url("../fonts/FuturaPTBookOblique.otf") format("opentype");
+  font-display: swap;
 }
 
 p {
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   font-size: $font-text;
   @media (max-width: 768px) {
     font-size: 18px;
   }
 }
 h1 {
-  font-family: "Reislust";
+  font-family: "Reislust", sans-serif;
   font-size: $font-title;
   @media (max-width: 768px) {
     font-size: 46px;
@@ -105,7 +114,7 @@ h1 {
     color: $color-fontBrown;
   }
   .title {
-    font-family: "Reislust";
+    font-family: "Reislust", sans-serif;
     font-size: calc(5.125rem + ((1vw - 5.68px) * 19.0972));
     line-height: 0.5;
     @media (max-width: 768px) {
@@ -125,19 +134,19 @@ h1 {
         width: 80vw;
       }
       h2 {
-        font-family: "FuturaPTMedium";
+        font-family: "FuturaPTMedium", sans-serif;
         font-size: $font-subtitle;
         font-weight: normal;
         line-height: 2;
         @media (max-width: 768px) {
-          font-family: "FuturaPTBold";
+          font-family: "FuturaPTBold", sans-serif;
           font-size: 16px;
           line-height: 3;
         }
       }
       p {
         @media (max-width: 768px) {
-          font-family: "FuturaPTMedium";
+          font-family: "FuturaPTMedium", sans-serif;
           font-size: 14px;
         }
       }
@@ -201,7 +210,7 @@ h1 {
       width: auto;
       height: auto;
       font-size: $font-text;
-      font-family: "FuturaPTNormal";
+      font-family: "FuturaPTNormal", sans-serif;
       color: $color-button;
       border: 3px solid #a8957e;
       border-radius: 4px;
@@ -227,7 +236,7 @@ h1 {
     }
   }
   h2 {
-    font-family: "FuturaPTMedium";
+    font-family: "FuturaPTMedium", sans-serif;
     font-size: $font-subtitle;
     font-weight: normal;
     line-height: 2;
@@ -235,7 +244,7 @@ h1 {
       font-size: 18px;
     }
     @media (max-width: 768px) {
-      font-family: "FuturaPTBold";
+      font-family: "FuturaPTBold", sans-serif;
       font-size: 16px;
     }
   }
@@ -244,7 +253,7 @@ h1 {
       font-size: 16px;
     }
     @media (max-width: 768px) {
-      font-family: "FuturaPTMedium";
+      font-family: "FuturaPTMedium", sans-serif;
       font-size: 14px;
       line-height: 1.5;
     }
@@ -314,6 +323,6 @@ h1 {
   .back {
     color: $color-fontBrown;
     font-size: $font-subtitle;
-    font-family: "FuturaPTMedium";
+    font-family: "FuturaPTMedium", sans-serif;
   }
 }

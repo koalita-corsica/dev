@@ -2,26 +2,31 @@
 @import url("https://p.typekit.net/p.css?s=1&k=mkk7zfs&ht=tk&f=10881.10882.10884.10885.15357.15358.15361.15362.32874.32875&a=50854053&app=typekit&e=css");
 @font-face {
   font-family: "Reislust";
-  src: url("../fonts/Reislust-97D7.ttf");
+  src: local("Reislust"), url("../fonts/Reislust-97D7.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTNormal";
-  src: url("../fonts/FuturaPTBook.otf");
+  src: local("FuturaPTNormal"), url("../fonts/FuturaPTBook.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTMedium";
-  src: url("../fonts/FuturaPTMedium.otf");
+  src: local("FuturaPTMedium"), url("../fonts/FuturaPTMedium.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTbold";
-  src: url("../fonts/FuturaPTBold.otf");
+  src: local("FuturaPTbold"), url("../fonts/FuturaPTBold.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTNormalOblique";
-  src: url("../fonts/FuturaPTBookOblique.otf");
+  src: local("FuturaPTNormalOblique"), url("../fonts/FuturaPTBookOblique.otf") format("opentype");
+  font-display: swap;
 }
 em {
-  font-family: "FuturaPTNormalOblique";
+  font-family: "FuturaPTNormalOblique", sans-serif;
   font-size: 18px;
 }
 @media (max-width: 1024px) {
@@ -31,12 +36,12 @@ em {
 }
 
 h1 {
-  font-family: "Reislust";
+  font-family: "Reislust", sans-serif;
   font-size: 70px;
 }
 
 body {
-  background-color: #E3E3DC;
+  background-color: #e3e3dc;
   width: 100vw;
   overflow: hidden;
 }
@@ -137,7 +142,7 @@ body {
 }
 .wrapperProduit .retour .arrow {
   font-size: 50px;
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
 }
 @media (max-width: 1024px) {
   .wrapperProduit .retour .arrow {
@@ -159,7 +164,7 @@ body {
   align-self: center;
   height: auto;
   font-size: 25px;
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", sans-serif;
 }
 @media (max-width: 1024px) {
   .wrapperProduit .retour .back p {
@@ -224,7 +229,7 @@ body {
   }
 }
 .wrapperProduit .game .desc p {
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", sans-serif;
   font-size: 18px;
   line-height: 1.4;
 }

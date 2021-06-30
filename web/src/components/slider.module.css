@@ -2,23 +2,28 @@
 @import url("https://p.typekit.net/p.css?s=1&k=mkk7zfs&ht=tk&f=10881.10882.10884.10885.15357.15358.15361.15362.32874.32875&a=50854053&app=typekit&e=css");
 @font-face {
   font-family: "Reislust";
-  src: url("../fonts/Reislust-97D7.ttf");
+  src: local("Reislust"), url("../fonts/Reislust-97D7.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTNormal";
-  src: url("../fonts/FuturaPTBook.otf");
+  src: local("FuturaPTNormal"), url("../fonts/FuturaPTBook.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTMedium";
-  src: url("../fonts/FuturaPTMedium.otf");
+  src: local("FuturaPTMedium"), url("../fonts/FuturaPTMedium.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTbold";
-  src: url("../fonts/FuturaPTBold.otf");
+  src: local("FuturaPTbold"), url("../fonts/FuturaPTBold.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTNormalOblique";
-  src: url("../fonts/FuturaPTBookOblique.otf");
+  src: local("FuturaPTNormalOblique"), url("../fonts/FuturaPTBookOblique.otf") format("opentype");
+  font-display: swap;
 }
 .slide {
   width: auto;
@@ -88,14 +93,14 @@
   height: auto;
 }
 .content div h2 {
-  font-family: "FuturaPTMedium" !important;
+  font-family: "FuturaPTMedium", sans-serif !important;
   font-size: 25px;
   font-weight: normal;
   line-height: 2;
 }
 @media (max-width: 1024px) {
   .content div h2 {
-    font-family: "FuturaPTbold" !important;
+    font-family: "FuturaPTbold", sans-serif !important;
     font-size: 21px;
   }
 }
@@ -106,13 +111,13 @@
   }
 }
 .content p {
-  font-family: "FuturaPTNormal" !important;
+  font-family: "FuturaPTNormal", sans-serif !important;
   font-size: 20px;
 }
 @media (max-width: 1024px) {
   .content p {
     font-size: 16px;
-    font-family: "FuturaPRMedium" !important;
+    font-family: "FuturaPRMedium", sans-serif !important;
   }
 }
 @media (max-width: 768px) {
@@ -136,9 +141,9 @@
 }
 .content button .btn {
   text-decoration: none;
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   font-size: 20px;
-  color: #A8957E;
+  color: #a8957e;
   margin: 2vw;
 }
 @media (max-width: 768px) {
@@ -147,10 +152,10 @@
   }
 }
 .content button:hover {
-  background-color: #A8957E;
+  background-color: #a8957e;
 }
 .content button:hover .btn {
-  color: #E3E3DC;
+  color: #e3e3dc;
 }
 
 /*# sourceMappingURL=slider.module.css.map */

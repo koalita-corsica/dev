@@ -57,7 +57,7 @@ $font-text: 20px;
     text-align: center;
   }
   p {
-    font-family: "FuturaPTNormal";
+    font-family: "FuturaPTNormal", sans-serif;
     font-size: $font-text;
     line-height: 1.5;
     @media (max-width: 1024px) {
@@ -68,7 +68,7 @@ $font-text: 20px;
 .presse {
   h1 {
     font-size: 100px;
-    font-family: "Reislust";
+    font-family: "Reislust", sans-serif;
     line-height: 0;
     @media (max-width: 1024px) {
       text-align: center;
@@ -78,19 +78,19 @@ $font-text: 20px;
   }
   h2 {
     font-size: $font-subtitle;
-    font-family: "FuturaPTMedium";
+    font-family: "FuturaPTMedium", sans-serif;
 
     @media (max-width: 1024px) {
       text-align: center;
       font-size: 18px;
-      font-family: "FuturaPTbold";
+      font-family: "FuturaPTbold", sans-serif;
       line-height: 2;
     }
   }
   p {
     @media (max-width: 1024px) {
       text-align: center;
-      font-family: "FuturaPTMedium";
+      font-family: "FuturaPTMedium", sans-serif;
       font-size: 14px;
     }
   }
@@ -135,7 +135,7 @@ $font-text: 20px;
       p {
         @media (max-width: 1024px) {
           text-align: center;
-          font-family: "FuturaPTMedium";
+          font-family: "FuturaPTMedium", sans-serif;
           font-size: 14px;
         }
       }
@@ -147,7 +147,7 @@ $font-text: 20px;
       }
       strong {
         @media (max-width: 1024px) {
-          font-family: "FuturaPTbold";
+          font-family: "FuturaPTbold", sans-serif;
           font-size: 16px;
         }
       }
@@ -192,7 +192,7 @@ $font-text: 20px;
       p {
         @media (max-width: 1024px) {
           text-align: center;
-          font-family: "FuturaPTMedium";
+          font-family: "FuturaPTMedium", sans-serif;
           font-size: 14px;
         }
       }
@@ -204,7 +204,7 @@ $font-text: 20px;
       }
       strong {
         @media (max-width: 1024px) {
-          font-family: "FuturaPTbold";
+          font-family: "FuturaPTbold", sans-serif;
           font-size: 16px;
         }
       }
@@ -221,6 +221,6 @@ $font-text: 20px;
   border: none;
 }
 strong {
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", sans-serif;
   font-weight: normal;
 }

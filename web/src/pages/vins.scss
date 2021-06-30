@@ -63,7 +63,7 @@ $font-text: 20px;
     color: $color-fontBrown;
   }
   .title {
-    font-family: "Reislust";
+    font-family: "Reislust", sans-serif;
     text-align: center;
     font-size: 85px;
     @media (max-width: 1024px) {
@@ -132,7 +132,7 @@ $font-text: 20px;
         }
         a {
           text-decoration: none;
-          font-family: "FuturaPTNormal";
+          font-family: "FuturaPTNormal", sans-serif;
           font-size: calc(0.875rem + ((1vw - 10.24px) * 0.6696));
           color: $color-button;
           margin-right: 1vw;
@@ -154,7 +154,7 @@ $font-text: 20px;
 
       p {
         margin: 1vh;
-        font-family: "FuturaPTNormal";
+        font-family: "FuturaPTNormal", sans-serif;
         font-size: calc(0.875rem + ((1vw - 10.24px) * 0.6696));
         @media (max-width: 768px) {
           font-size: 14px;
@@ -164,7 +164,7 @@ $font-text: 20px;
         }
       }
       h2 {
-        font-family: "FuturaPTMedium";
+        font-family: "FuturaPTMedium", sans-serif;
         font-size: calc(1.125rem + ((1vw - 10.24px) * 0.2232));
         @media (max-width: 768px) {
           font-size: 16px;
@@ -174,7 +174,7 @@ $font-text: 20px;
         }
       }
       h1 {
-        font-family: "Reislust";
+        font-family: "Reislust", sans-serif;
         font-size: calc(2.1875rem + ((1vw - 10.24px) * 6.1384));
         margin: 0 auto;
         @media (max-width: 1024px) {

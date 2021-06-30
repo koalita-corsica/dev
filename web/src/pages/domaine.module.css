@@ -37,20 +37,20 @@
 }
 
 h1 {
-  font-family: "Reislust";
+  font-family: "Reislust", sans-serif;
   font-size: 70px;
   font-weight: normal;
 }
 
 p {
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   font-size: calc(1rem + ((1vw - 10.24px) * 0.4464));
   line-height: 1.5;
 }
 @media (max-width: 768px) {
   p {
     font-size: 16px;
-    font-family: "FuturaPTNormalOblique";
+    font-family: "FuturaPTNormalOblique", sans-serif;
   }
 }
 @media (max-width: 1024px) {
@@ -60,7 +60,7 @@ p {
 }
 
 h2 {
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", sans-serif;
   font-size: calc(1.3125rem + ((1vw - 10.24px) * 0.4464));
 }
 
@@ -108,7 +108,7 @@ h2 {
   color: #e3e3dc;
 }
 .section1Domaine .block1 .titlesec1 {
-  font-family: "Reislust";
+  font-family: "Reislust", sans-serif;
   font-size: calc(4.375rem + ((1vw - 10.24px) * 5.0223));
   font-weight: normal;
   margin: 0 auto;
@@ -136,11 +136,11 @@ h2 {
 @media (max-width: 768px) {
   .section1Domaine .block1 p {
     font-size: 14px;
-    font-family: "FuturaPTNormalOblique";
+    font-family: "FuturaPTNormalOblique", sans-serif;
   }
 }
 .section1Domaine .block1 h2 {
-  font-family: "FuturaPTBold";
+  font-family: "FuturaPTBold", sans-serif;
   line-height: 2;
   font-size: calc(1.3125rem + ((1vw - 10.24px) * 0.4464));
 }
@@ -204,7 +204,7 @@ h2 {
   .section2 h2 {
     font-size: 21px;
     margin-top: 0;
-    font-family: "FuturaPTBold";
+    font-family: "FuturaPTBold", sans-serif;
   }
 }
 @media (max-width: 768px) {
@@ -223,14 +223,14 @@ h2 {
 }
 .section2 .block2 p {
   line-height: 1.5;
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   font-size: calc(1rem + ((1vw - 10.24px) * 0.4464));
   color: #685950;
 }
 @media (max-width: 1024px) {
   .section2 .block2 p {
     font-size: 18px;
-    font-family: "FuturaPTMedium";
+    font-family: "FuturaPTMedium", sans-serif;
   }
 }
 @media (max-width: 768px) {

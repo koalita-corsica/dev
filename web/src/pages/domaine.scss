@@ -47,24 +47,24 @@ $font-text: 20px;
   }
 }
 h1 {
-  font-family: "Reislust";
+  font-family: "Reislust", sans-serif;
   font-size: $font-title;
   font-weight: normal;
 }
 p {
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   font-size: calc(1rem + ((1vw - 10.24px) * 0.4464));
   line-height: 1.5;
   @media (max-width: 768px) {
     font-size: 16px;
-    font-family: "FuturaPTNormalOblique";
+    font-family: "FuturaPTNormalOblique", sans-serif;
   }
   @media (max-width: 1024px) {
     font-size: 18px;
   }
 }
 h2 {
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", sans-serif;
   font-size: calc(1.3125rem + ((1vw - 10.24px) * 0.4464));
 }
 .section1Domaine {
@@ -109,7 +109,7 @@ h2 {
       color: $color-fontWhite;
     }
     .titlesec1 {
-      font-family: "Reislust";
+      font-family: "Reislust", sans-serif;
       font-size: calc(4.375rem + ((1vw - 10.24px) * 5.0223));
       font-weight: normal;
       margin: 0 auto;
@@ -129,11 +129,11 @@ h2 {
       }
       @media (max-width: 768px) {
         font-size: 14px;
-        font-family: "FuturaPTNormalOblique";
+        font-family: "FuturaPTNormalOblique", sans-serif;
       }
     }
     h2 {
-      font-family: "FuturaPTBold";
+      font-family: "FuturaPTBold", sans-serif;
       line-height: 2;
       font-size: calc(1.3125rem + ((1vw - 10.24px) * 0.4464));
       @media (max-width: 1024px) {
@@ -186,7 +186,7 @@ h2 {
     @media (max-width: 1024px) {
       font-size: 21px;
       margin-top: 0;
-      font-family: "FuturaPTBold";
+      font-family: "FuturaPTBold", sans-serif;
     }
     @media (max-width: 768px) {
       font-size: 16px;
@@ -200,12 +200,12 @@ h2 {
     }
     p {
       line-height: 1.5;
-      font-family: "FuturaPTNormal";
+      font-family: "FuturaPTNormal", sans-serif;
       font-size: calc(1rem + ((1vw - 10.24px) * 0.4464));
       color: $color-fontBrown;
       @media (max-width: 1024px) {
         font-size: 18px;
-        font-family: "FuturaPTMedium";
+        font-family: "FuturaPTMedium", sans-serif;
       }
       @media (max-width: 768px) {
         font-size: 14px;

@@ -2,30 +2,35 @@
 @import url("https://p.typekit.net/p.css?s=1&k=mkk7zfs&ht=tk&f=10881.10882.10884.10885.15357.15358.15361.15362.32874.32875&a=50854053&app=typekit&e=css");
 @font-face {
   font-family: "Reislust";
-  src: url("../fonts/Reislust-97D7.ttf");
+  src: local("Reislust"), url("../fonts/Reislust-97D7.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTNormal";
-  src: url("../fonts/FuturaPTBook.otf");
+  src: local("FuturaPTNormal"), url("../fonts/FuturaPTBook.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTMedium";
-  src: url("../fonts/FuturaPTMedium.otf");
+  src: local("FuturaPTMedium"), url("../fonts/FuturaPTMedium.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTbold";
-  src: url("../fonts/FuturaPTBold.otf");
+  src: local("FuturaPTbold"), url("../fonts/FuturaPTBold.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTNormalOblique";
-  src: url("../fonts/FuturaPTBookOblique.otf");
+  src: local("FuturaPTNormalOblique"), url("../fonts/FuturaPTBookOblique.otf") format("opentype");
+  font-display: swap;
 }
 .ntm {
   color: red;
 }
 
 .wrapper {
-  background-color: #D9D9D7;
+  background-color: #d9d9d7;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -37,11 +42,11 @@
 .wrapper a {
   text-decoration: none;
   font-size: 20px;
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
 }
 @media (max-width: 1024px) {
   .wrapper a {
-    font-family: "FuturaPTMedium";
+    font-family: "FuturaPTMedium", sans-serif;
     font-size: 18px;
   }
 }
@@ -70,7 +75,7 @@
   text-align: center;
 }
 .domainMondange a {
-  font-family: "Reislust" !important;
+  font-family: "Reislust", sans-serif !important;
   font-size: calc(3.75rem + ((1vw - 10.24px) * 1.5625));
 }
 @media (max-width: 1024px) {
@@ -82,7 +87,7 @@
 
 .contact {
   font-size: 20px;
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   grid-area: 1/1/3/2;
   line-height: 2;
 }
@@ -110,12 +115,12 @@
   }
 }
 .plansite .plan {
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", sans-serif;
   font-size: 25px;
 }
 @media (max-width: 1024px) {
   .plansite .plan {
-    font-family: "FuturaPTbold";
+    font-family: "FuturaPTbold", sans-serif;
   }
 }
 .plansite .ul {
@@ -133,7 +138,7 @@
 }
 .plansite .ul .li {
   margin-top: 2vh;
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   border-bottom: #707070 solid 2px;
 }
 @media (max-width: 1024px) {
@@ -145,7 +150,7 @@
 
 .follow {
   font-size: 25px;
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", sans-serif;
   grid-area: 2/2/3/3;
   display: flex;
   justify-content: center;
@@ -164,11 +169,11 @@
 .follow .us {
   text-align: center;
   font-size: 25px;
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", sans-serif;
 }
 @media (max-width: 1024px) {
   .follow .us {
-    font-family: "FuturaPTbold";
+    font-family: "FuturaPTbold", sans-serif;
     font-size: 21px;
   }
 }
@@ -204,9 +209,9 @@
   grid-template-columns: repeat(2, 0.9fr) 1.2fr;
 }
 .container2 * {
-  color: #98928D;
+  color: #98928d;
   font-size: 20px;
-  font-family: "FuturaPTNormalOblique";
+  font-family: "FuturaPTNormalOblique", sans-serif;
 }
 @media (max-width: 1024px) {
   .container2 * {
@@ -224,7 +229,7 @@
 }
 .container2 a {
   font-size: 20px;
-  font-family: "FuturaPTNormalOblique";
+  font-family: "FuturaPTNormalOblique", sans-serif;
 }
 @media (max-width: 1024px) {
   .container2 a {

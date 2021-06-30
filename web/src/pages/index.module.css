@@ -31,7 +31,7 @@
 }
 
 .title {
-  font-family: "Reislust";
+  font-family: "Reislust", sans-serif;
   font-size: 7.2em;
   line-height: 1;
 }
@@ -122,7 +122,7 @@
 }
 .section1 div p {
   line-height: 1.5;
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   font-size: 20px;
 }
 @media (max-width: 1024px) {
@@ -136,7 +136,7 @@
   }
 }
 .section1 div h2 {
-  font-family: "FuturaPTbold";
+  font-family: "FuturaPTbold", sans-serif;
   line-height: 2;
   font-size: 25px;
 }
@@ -167,7 +167,7 @@
 }
 .section1 .gamme a {
   text-decoration: none;
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   font-size: 20px;
   color: #a8957e;
   margin-right: 2vw;
@@ -254,18 +254,18 @@
 .section2 .block2 div p {
   color: #e3e3dc;
   line-height: 1.5;
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   font-size: 20px;
 }
 @media (max-width: 768px) {
   .section2 .block2 div p {
-    font-family: "FuturaPTNormalOblique";
+    font-family: "FuturaPTNormalOblique", sans-serif;
     font-size: 15px;
   }
 }
 .section2 .block2 div h2 {
   color: #e3e3dc;
-  font-family: "FuturaPTbold";
+  font-family: "FuturaPTbold", sans-serif;
   line-height: 3;
   font-size: 25px;
 }
@@ -292,7 +292,7 @@
 }
 .section2 .block2 .gamme a {
   text-decoration: none;
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   font-size: 20px;
   color: #a8957e;
   margin: 2vw;
@@ -306,7 +306,7 @@
 }
 @media (max-width: 768px) {
   .section2 .block2 .gamme a::after {
-    font-family: "FuturaPTNormal";
+    font-family: "FuturaPTNormal", sans-serif;
     font-size: 14px;
     content: "VOIR PLUS";
     text-indent: 0;
@@ -404,7 +404,7 @@
 .section3 .sliderContain .title {
   font-size: 100px;
   margin-left: 10vh;
-  font-family: "Reislust";
+  font-family: "Reislust", sans-serif;
   font-weight: normal;
   text-align: left;
   line-height: 1;
@@ -510,7 +510,7 @@
   }
 }
 .section4 div p {
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   font-size: 20px;
   line-height: 1.5;
 }
@@ -521,7 +521,7 @@
 }
 .section4 div h2 {
   margin-top: 14vh;
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", sans-serif;
   font-size: 25px;
   line-height: 2;
 }
@@ -559,7 +559,7 @@
 }
 .section4 .gamme a {
   text-decoration: none;
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   font-size: 20px;
   color: #a8957e;
   margin: 2vw;

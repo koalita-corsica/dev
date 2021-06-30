@@ -44,7 +44,7 @@ $font-text: 20px;
   flex-direction: column;
 }
 .title {
-  font-family: "Reislust";
+  font-family: "Reislust", sans-serif;
   font-size: 7.2em;
   line-height: 1;
   @media (max-width: 1024px) {
@@ -128,7 +128,7 @@ $font-text: 20px;
   }
   div p {
     line-height: 1.5;
-    font-family: "FuturaPTNormal";
+    font-family: "FuturaPTNormal", sans-serif;
     font-size: $font-text;
     @media (max-width: 1024px) {
       font-size: 16px;
@@ -138,7 +138,7 @@ $font-text: 20px;
     }
   }
   div h2 {
-    font-family: "FuturaPTbold";
+    font-family: "FuturaPTbold", sans-serif;
     line-height: 2;
     font-size: 25px;
     @media (max-width: 1024px) {
@@ -162,7 +162,7 @@ $font-text: 20px;
     }
     a {
       text-decoration: none;
-      font-family: "FuturaPTNormal";
+      font-family: "FuturaPTNormal", sans-serif;
       font-size: $font-text;
       color: $color-button;
       margin-right: 2vw;
@@ -246,16 +246,16 @@ $font-text: 20px;
     div p {
       color: $color-fontWhite;
       line-height: 1.5;
-      font-family: "FuturaPTNormal";
+      font-family: "FuturaPTNormal", sans-serif;
       font-size: $font-text;
       @media (max-width: 768px) {
-        font-family: "FuturaPTNormalOblique";
+        font-family: "FuturaPTNormalOblique", sans-serif;
         font-size: 15px;
       }
     }
     div h2 {
       color: $color-fontWhite;
-      font-family: "FuturaPTbold";
+      font-family: "FuturaPTbold", sans-serif;
       line-height: 3;
       font-size: 25px;
       @media (max-width: 768px) {
@@ -277,7 +277,7 @@ $font-text: 20px;
       }
       a {
         text-decoration: none;
-        font-family: "FuturaPTNormal";
+        font-family: "FuturaPTNormal", sans-serif;
         font-size: $font-text;
         color: $color-button;
         margin: 2vw;
@@ -289,7 +289,7 @@ $font-text: 20px;
       }
       a::after {
         @media (max-width: 768px) {
-          font-family: "FuturaPTNormal";
+          font-family: "FuturaPTNormal", sans-serif;
           font-size: 14px;
           content: "VOIR PLUS";
           text-indent: 0;
@@ -385,7 +385,7 @@ $font-text: 20px;
     .title {
       font-size: 100px;
       margin-left: 10vh;
-      font-family: "Reislust";
+      font-family: "Reislust", sans-serif;
       font-weight: normal;
       text-align: left;
       line-height: 1;
@@ -475,7 +475,7 @@ $font-text: 20px;
     }
   }
   div p {
-    font-family: "FuturaPTNormal";
+    font-family: "FuturaPTNormal", sans-serif;
     font-size: $font-text;
     line-height: 1.5;
     @media (max-width: 768px) {
@@ -484,7 +484,7 @@ $font-text: 20px;
   }
   div h2 {
     margin-top: 14vh;
-    font-family: "FuturaPTMedium";
+    font-family: "FuturaPTMedium", sans-serif;
     font-size: 25px;
     line-height: 2;
     @media (max-width: 768px) {
@@ -515,7 +515,7 @@ $font-text: 20px;
     }
     a {
       text-decoration: none;
-      font-family: "FuturaPTNormal";
+      font-family: "FuturaPTNormal", sans-serif;
       font-size: $font-text;
       color: $color-button;
       margin: 2vw;

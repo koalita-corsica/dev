@@ -26,11 +26,11 @@
   font-display: swap;
 }
 p {
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
 }
 
 h1 {
-  font-family: "Reislust";
+  font-family: "Reislust", sans-serif;
   font-size: 70px;
 }
 @media (max-width: 1024px) {
@@ -41,7 +41,7 @@ h1 {
 
 label {
   font-size: 25px;
-  font-family: "FuturaPTbold";
+  font-family: "FuturaPTbold", sans-serif;
   font-weight: bold;
 }
 @media (max-width: 1024px) {
@@ -148,7 +148,7 @@ label {
 .form ::placeholder {
   color: #e3e3dc;
   font-size: 20px;
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
 }
 @media (max-width: 1024px) {
   .form ::placeholder {
@@ -181,7 +181,7 @@ label {
   line-height: 2;
   width: 80%;
   font-size: 20px;
-  font-family: "FuturaPTbold";
+  font-family: "FuturaPTbold", sans-serif;
 }
 @media (max-width: 1024px) {
   .horaire div {
@@ -191,7 +191,7 @@ label {
 }
 .horaire .ouverture {
   font-size: 23px;
-  font-family: "FuturaPTBold";
+  font-family: "FuturaPTBold", sans-serif;
   width: auto;
   margin: 0;
 }
@@ -332,7 +332,7 @@ label {
   padding-right: 2vw;
   align-self: flex-end;
   font-size: 20px;
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
 }
 @media (max-width: 1024px) {
   .envoyer {
@@ -358,7 +358,7 @@ label {
     color: white;
     border: 1px solid #a8957e;
     background-color: #a8957e;
-    font-family: "FuturaPTNormal";
+    font-family: "FuturaPTNormal", sans-serif;
   }
 }
 

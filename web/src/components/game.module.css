@@ -2,26 +2,31 @@
 @import url("https://p.typekit.net/p.css?s=1&k=mkk7zfs&ht=tk&f=10881.10882.10884.10885.15357.15358.15361.15362.32874.32875&a=50854053&app=typekit&e=css");
 @font-face {
   font-family: "Reislust";
-  src: url("../fonts/Reislust-97D7.ttf");
+  src: local("Reislust"), url("../fonts/Reislust-97D7.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTNormal";
-  src: url("../fonts/FuturaPTBook.otf");
+  src: local("FuturaPTNormal"), url("../fonts/FuturaPTBook.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTMedium";
-  src: url("../fonts/FuturaPTMedium.otf");
+  src: local("FuturaPTMedium"), url("../fonts/FuturaPTMedium.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
-  font-family: "FuturaPTBold";
-  src: url("../fonts/FuturaPTBold.otf");
+  font-family: "FuturaPTbold";
+  src: local("FuturaPTbold"), url("../fonts/FuturaPTBold.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "FuturaPTNormalOblique";
-  src: url("../fonts/FuturaPTBookOblique.otf");
+  src: local("FuturaPTNormalOblique"), url("../fonts/FuturaPTBookOblique.otf") format("opentype");
+  font-display: swap;
 }
 p {
-  font-family: "FuturaPTNormal";
+  font-family: "FuturaPTNormal", sans-serif;
   font-size: 20px;
 }
 @media (max-width: 768px) {
@@ -31,7 +36,7 @@ p {
 }
 
 h1 {
-  font-family: "Reislust";
+  font-family: "Reislust", sans-serif;
   font-size: 70px;
 }
 @media (max-width: 768px) {
@@ -73,7 +78,7 @@ h1 {
   font-size: 20px;
 }
 .wrapper .gameBg:nth-child(2n) {
-  background-color: #D9D9D7;
+  background-color: #d9d9d7;
 }
 .wrapper .gameBg {
   height: 100vh;
@@ -112,7 +117,7 @@ h1 {
   color: #685950;
 }
 .desc .title {
-  font-family: "Reislust";
+  font-family: "Reislust", sans-serif;
   font-size: calc(5.125rem + ((1vw - 5.68px) * 19.0972));
   line-height: 0.5;
 }
@@ -138,21 +143,21 @@ h1 {
   }
 }
 .desc .descText :first-child h2 {
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", sans-serif;
   font-size: 25px;
   font-weight: normal;
   line-height: 2;
 }
 @media (max-width: 768px) {
   .desc .descText :first-child h2 {
-    font-family: "FuturaPTBold";
+    font-family: "FuturaPTBold", sans-serif;
     font-size: 16px;
     line-height: 3;
   }
 }
 @media (max-width: 768px) {
   .desc .descText :first-child p {
-    font-family: "FuturaPTMedium";
+    font-family: "FuturaPTMedium", sans-serif;
     font-size: 14px;
   }
 }
@@ -229,9 +234,9 @@ h1 {
   width: auto;
   height: auto;
   font-size: 20px;
-  font-family: "FuturaPTNormal";
-  color: #A8957E;
-  border: 3px solid #A8957E;
+  font-family: "FuturaPTNormal", sans-serif;
+  color: #a8957e;
+  border: 3px solid #a8957e;
   border-radius: 4px;
   background-color: transparent;
   margin-top: 5vh;
@@ -248,17 +253,17 @@ h1 {
 }
 .game .gameText button a {
   text-decoration: none;
-  color: #A8957E;
+  color: #a8957e;
   margin: 2vh;
 }
 .game .gameText button:hover {
-  background-color: #A8957E;
+  background-color: #a8957e;
 }
 .game .gameText button:hover a {
-  color: #E3E3DC;
+  color: #e3e3dc;
 }
 .game h2 {
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", sans-serif;
   font-size: 25px;
   font-weight: normal;
   line-height: 2;
@@ -270,7 +275,7 @@ h1 {
 }
 @media (max-width: 768px) {
   .game h2 {
-    font-family: "FuturaPTBold";
+    font-family: "FuturaPTBold", sans-serif;
     font-size: 16px;
   }
 }
@@ -281,7 +286,7 @@ h1 {
 }
 @media (max-width: 768px) {
   .game p {
-    font-family: "FuturaPTMedium";
+    font-family: "FuturaPTMedium", sans-serif;
     font-size: 14px;
     line-height: 1.5;
   }
@@ -358,7 +363,7 @@ h1 {
 .bandeau .back {
   color: #685950;
   font-size: 25px;
-  font-family: "FuturaPTMedium";
+  font-family: "FuturaPTMedium", sans-serif;
 }
 
 /*# sourceMappingURL=game.module.css.map */
