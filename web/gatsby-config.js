@@ -12,12 +12,6 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/about-us/`, `/projects/*`],
-      },
-    },
-    {
       resolve: "gatsby-source-sanity",
       options: {
         ...clientConfig.sanity,
