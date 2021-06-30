@@ -79,6 +79,7 @@ const VinsPage = (props) => {
                   width: "165px",
                   height: "164px"
                 }}
+                
               />
               <div className={styles.block}>
                 <h1 className={styles.titleGammes}> {games.node.title} </h1>
