@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
 /* eslint-disable react/jsx-key */
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy } from "react";
 import { Link } from "gatsby";
 import { graphql } from "gatsby";
 import {
@@ -10,7 +10,6 @@ import {
 } from "../lib/helpers";
 import GraphQLErrorList from "../components/graphql-error-list";
 import Layout from "../containers/layout";
-import Slider from "../components/slider";
 import PortableText from "../components/portableText";
 import bottle from "../asset/Laudria_Rouge2.png";
 import pressImg from "../asset/accueilpresse.jpg";
@@ -18,6 +17,8 @@ import domainImg from "../asset/accueildomaine.jpg";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import * as styles from "../pages/index.module.css";
+
+const Slider = lazy(() => import('../components/slider'))
 
 export const query = graphql`
   query AccueilQuery {
