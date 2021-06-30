@@ -49,12 +49,6 @@ if (isBrowser) {
   document.body.appendChild(script);
 }
 
-if (isBrowser) {
-  var meta = document.createElement('meta')
-  meta.httpEquiv = 'cache-control'
-  meta.content = 'max-age=31536000'
-  document.getElementsByTagName('head')[0].appendChild(meta)
-}
 
 const GaleriePage = (props) => {
   const { data, errors } = props;

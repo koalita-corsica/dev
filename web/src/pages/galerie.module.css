@@ -63,7 +63,7 @@
 .titleContain .title {
   margin: 0 auto;
   justify-self: center;
-  font-family: "Reislust";
+  font-family: "Reislust", sans-serif;
   font-size: 7.2em;
   color: #685950;
   font-weight: normal;
