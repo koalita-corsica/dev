@@ -1,0 +1,334 @@
+@import "../pages/normalize.module.css";
+@import url("https://p.typekit.net/p.css?s=1&k=mkk7zfs&ht=tk&f=10881.10882.10884.10885.15357.15358.15361.15362.32874.32875&a=50854053&app=typekit&e=css");
+$color-fontWhite: #e3e3dc;
+$color-fontBrown: #685950;
+$color-backgroundGrey: #d9d9d7;
+$color-backgroundLightGrey: #e3e3dc;
+$color-button: #a8957e;
+$color-line: #707070;
+$font-title: 70px;
+$font-subtitle: 25px;
+$font-text: 20px;
+@font-face {
+  font-family: "Reislust";
+  src: local("Reislust"), url("../fonts/Reislust-97D7.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTNormal";
+  src: local("FuturaPTNormal"),
+    url("../fonts/FuturaPTBook.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: local("FuturaPTMedium"),
+    url("../fonts/FuturaPTMedium.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTbold";
+  src: local("FuturaPTbold"),
+    url("../fonts/FuturaPTBold.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTNormalOblique";
+  src: local("FuturaPTNormalOblique"),
+    url("../fonts/FuturaPTBookOblique.otf") format("opentype");
+  font-display: swap;
+}
+
+p {
+  font-family: "FuturaPTNormal";
+}
+h1 {
+  font-family: "Reislust";
+  font-size: $font-title;
+
+  @media (max-width: 1024px) {
+    font-size: 54px;
+  }
+}
+label {
+  font-size: $font-subtitle;
+  font-family: "FuturaPTbold";
+  font-weight: bold;
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+.wrapperCtc {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  margin-bottom: 6vh;
+  display: flex;
+  width: auto;
+  height: 84vh;
+  background-color: white;
+  amp-img {
+    height: auto;
+    width: 100vh;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+  p,
+  div,
+  h1,
+  h2,
+  label {
+    color: $color-fontBrown;
+  }
+  @media (max-width: 1024px) {
+    overflow: hidden;
+    flex-direction: column;
+    height: auto;
+    margin-top: 6vh;
+    width: auto;
+  }
+}
+.contactLayout {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  flex-direction: column;
+  column-gap: 3.5vw;
+  margin-top: 5h;
+  margin-bottom: 11vh;
+  margin-left: 3vw;
+  width: auto;
+  @media (max-width: 1024px) {
+    margin-right: 6vw;
+    margin-bottom: 0;
+  }
+  h1 {
+    grid-area: 1/1/2/4;
+    font-size: calc(3.5rem + ((1vw - 7.5px) * 1.1966));
+  }
+}
+.contact {
+  grid-area: 2/1/3/4;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 43% 40% 17%;
+  gap: 2vw;
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.form {
+  grid-area: 1/1/2/2;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 3.5vh;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+  .lbl {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    height: 3.8vh;
+    border: none;
+    border-bottom: 1px solid $color-line;
+  }
+  ::placeholder {
+    color: $color-fontWhite;
+    font-size: $font-text;
+    font-family: "FuturaPTNormal";
+    @media (max-width: 1024px) {
+      font-size: 14px;
+    }
+  }
+  textarea {
+    margin-top: 1vh;
+    height: 13.5vh;
+    border: 1px solid $color-line;
+  }
+}
+.horaire {
+  grid-area: 1/2/2/3;
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (max-width: 1024px) {
+    margin-top: 6vh;
+    height: auto;
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+  div {
+    line-height: 2;
+    width: 80%;
+    font-size: $font-text;
+    font-family: "FuturaPTbold";
+    @media (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 3;
+    }
+  }
+
+  .ouverture {
+    font-size: 23px;
+    font-family: "FuturaPTBold";
+    width: auto;
+    margin: 0;
+    @media (max-width: 1024px) {
+      font-size: 18px;
+    }
+  }
+  p {
+    width: 80%;
+    @media (max-width: 1024px) {
+      width: 90%;
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .horaire div:nth-last-child(2) {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    line-height: 0.8;
+  }
+}
+
+.bouteilles {
+  grid-area: 1/3/2/4;
+  width: 100%;
+  height: 100%;
+  gap: 5vh;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  .rouge1 {
+    background: url("../asset/Spargolato_Rouge.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 22vh;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+  .rouge12 {
+    background: url("../asset/Primizia_Rouge.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 22vh;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+  .rouge13 {
+    background: url("../asset/Laudria_Rouge.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 22vh;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+  .rouge21 {
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
+      background: url("../asset/bouteille-laudria1.webp");
+      background-size: 15vh;
+      background-repeat: no-repeat;
+      height: 15vh;
+      width: 100%;
+      background-position: center;
+      align-self: flex-end;
+    }
+  }
+  .rouge22 {
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
+      background: url("../asset/bouteille-primizia1.webp");
+      background-size: 15vh;
+      background-repeat: no-repeat;
+      height: 15vh;
+      width: 100%;
+      background-position: center;
+      align-self: flex-end;
+      // background-position-y: 5vh;
+    }
+  }
+  .rouge23 {
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
+      background: url("../asset/bouteille-spargolato1.webp");
+      background-size: 15vh;
+      background-repeat: no-repeat;
+      height: 15vh;
+      width: 100%;
+      background-position: center;
+      align-self: flex-end;
+      // background-position-y: 5vh;
+    }
+  }
+}
+.envoyer {
+  color: $color-button;
+  background-color: transparent;
+  border: 2px solid #a8957e;
+  border-radius: 4px;
+  width: auto;
+  justify-self: right;
+  padding: 0.5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  align-self: flex-end;
+  font-size: $font-text;
+  font-family: "FuturaPTNormal";
+
+  @media (max-width: 1024px) {
+    color: $color-button;
+    background-color: transparent;
+    border: 1px solid #a8957e;
+    align-self: center;
+    margin-top: 3vh;
+    font-size: 14px;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+  .envoyer:hover {
+    color: white;
+    border: none;
+    background-color: $color-button;
+
+    @media (max-width: 1024px) {
+      color: white;
+      border: 1px solid #a8957e;
+      background-color: $color-button;
+      font-family: "FuturaPTNormal";
+    }
+  }
+}

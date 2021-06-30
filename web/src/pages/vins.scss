@@ -1,0 +1,189 @@
+@import "../pages/normalize.module.css";
+@import url("https://p.typekit.net/p.css?s=1&k=mkk7zfs&ht=tk&f=10881.10882.10884.10885.15357.15358.15361.15362.32874.32875&a=50854053&app=typekit&e=css");
+$color-fontWhite: #e3e3dc;
+$color-fontBrown: #685950;
+$color-backgroundGrey: #d9d9d7;
+$color-backgroundLightGrey: #e3e3dc;
+$color-button: #a8957e;
+$color-line: #707070;
+$font-title: 70px;
+$font-subtitle: 25px;
+$font-text: 20px;
+@font-face {
+  font-family: "Reislust";
+  src: local("Reislust"), url("../fonts/Reislust-97D7.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTNormal";
+  src: local("FuturaPTNormal"),
+    url("../fonts/FuturaPTBook.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: local("FuturaPTMedium"),
+    url("../fonts/FuturaPTMedium.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTbold";
+  src: local("FuturaPTbold"),
+    url("../fonts/FuturaPTBold.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTNormalOblique";
+  src: local("FuturaPTNormalOblique"),
+    url("../fonts/FuturaPTBookOblique.otf") format("opentype");
+  font-display: swap;
+}
+
+.bandeau {
+  background: url("../asset/nosvins-bandeau.jpg");
+  height: 20vh;
+  background-position: center 23%;
+  background-size: cover;
+  @media (max-width: 1024px) {
+    background-position: center 0%;
+  }
+  @media (max-width: 768px) {
+    height: 13vh;
+  }
+}
+.domainContain {
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  @media (max-width: 1024px) {
+    height: auto;
+  }
+
+  * {
+    color: $color-fontBrown;
+  }
+  .title {
+    font-family: "Reislust";
+    text-align: center;
+    font-size: 85px;
+    @media (max-width: 1024px) {
+      font-size: 70px;
+    }
+    @media (max-width: 768px) {
+      font-size: 60px;
+    }
+  }
+  .content {
+    display: flex;
+    align-self: center;
+    width: 70vw;
+    justify-content: space-evenly;
+    gap: 5vh;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .gammes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 100%;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 3vh;
+    }
+    .logo {
+      width: auto;
+      height: 12vh;
+      @media (max-width: 768px) {
+        width: 122px;
+      }
+    }
+    .block {
+      background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border-radius: 12px;
+      opacity: 1;
+      text-align: center;
+      width: 100%;
+      height: auto;
+      @media (max-width: 768px) {
+        border-radius: 0;
+        width: 100%;
+      }
+      button {
+        background-color: transparent;
+        border: 3px solid #a8957e;
+        border-radius: 4px;
+        width: auto;
+        height: auto;
+        padding: 0.5vh;
+        margin: 1vh;
+        margin-top: 3vh;
+        align-self: center;
+        @media (max-width: 768px) {
+          margin-bottom: 2vh;
+        }
+        @media (max-width: 1024px) {
+          margin-bottom: 2vh;
+          margin-top: 1vh;
+        }
+        a {
+          text-decoration: none;
+          font-family: "FuturaPTNormal";
+          font-size: calc(0.875rem + ((1vw - 10.24px) * 0.6696));
+          color: $color-button;
+          margin-right: 1vw;
+          margin-left: 1vw;
+          @media (max-width: 1024px) {
+            font-size: 15px;
+          }
+          @media (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+      }
+      button:hover {
+        background-color: $color-button;
+        a {
+          color: $color-backgroundLightGrey;
+        }
+      }
+
+      p {
+        margin: 1vh;
+        font-family: "FuturaPTNormal";
+        font-size: calc(0.875rem + ((1vw - 10.24px) * 0.6696));
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+        @media (max-width: 1024px) {
+          font-size: 15px;
+        }
+      }
+      h2 {
+        font-family: "FuturaPTMedium";
+        font-size: calc(1.125rem + ((1vw - 10.24px) * 0.2232));
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
+        @media (max-width: 1024px) {
+          font-size: 17px;
+        }
+      }
+      h1 {
+        font-family: "Reislust";
+        font-size: calc(2.1875rem + ((1vw - 10.24px) * 6.1384));
+        margin: 0 auto;
+        @media (max-width: 1024px) {
+          font-size: 38px;
+        }
+        @media (max-width: 768px) {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}

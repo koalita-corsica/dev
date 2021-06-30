@@ -1,0 +1,108 @@
+@import "../pages/normalize.module.css";
+@import url("https://p.typekit.net/p.css?s=1&k=mkk7zfs&ht=tk&f=10881.10882.10884.10885.15357.15358.15361.15362.32874.32875&a=50854053&app=typekit&e=css");
+@font-face {
+  font-family: "Reislust";
+  src: url("../fonts/Reislust-97D7.ttf");
+}
+@font-face {
+  font-family: "FuturaPTNormal";
+  src: url("../fonts/FuturaPTBook.otf");
+}
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: url("../fonts/FuturaPTMedium.otf");
+}
+@font-face {
+  font-family: "FuturaPTbold";
+  src: url("../fonts/FuturaPTBold.otf");
+}
+@font-face {
+  font-family: "FuturaPTNormalOblique";
+  src: url("../fonts/FuturaPTBookOblique.otf");
+}
+.wrapper {
+  height: 10vh;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding-top: 1vh;
+  width: auto;
+  background-color: #E3E3DC;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+    width: 100vw;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    z-index: 100;
+  }
+}
+.wrapper .siteTitle {
+  width: auto;
+  justify-self: left;
+}
+@media (max-width: 1024px) {
+  .wrapper .siteTitle {
+    order: 2;
+    margin-right: 6vw;
+  }
+}
+.wrapper .siteTitle a {
+  color: #685950;
+  font-family: "Reislust";
+  font-size: calc(3.25rem + ((1vw - 10.24px) * 2.0089));
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  .wrapper .siteTitle a {
+    width: auto;
+    font-size: 70px;
+    min-height: 0vw;
+    align-self: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper .siteTitle a {
+    font-size: 48px;
+  }
+}
+.wrapper nav {
+  width: 55vw;
+}
+@media (max-width: 1024px) {
+  .wrapper nav {
+    width: 100vw;
+    height: 100%;
+  }
+}
+.wrapper nav ul {
+  justify-content: space-between;
+  justify-self: right;
+  display: flex;
+}
+.wrapper nav li {
+  list-style-type: none;
+}
+.wrapper nav li a {
+  text-decoration: none;
+  font-size: calc(1rem + ((1vw - 10.24px) * 0.4464));
+  color: #685950;
+  font-family: "FuturaPTMedium";
+}
+@media (max-width: 1024px) {
+  .wrapper nav li a {
+    font-size: 26px;
+  }
+}
+.wrapper nav li a:hover {
+  color: #A8957E;
+  font-family: "FuturaPTbold";
+}
+
+/*# sourceMappingURL=header.module.css.map */

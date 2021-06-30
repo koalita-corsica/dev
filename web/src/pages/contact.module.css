@@ -1,0 +1,365 @@
+@import "../pages/normalize.module.css";
+@import url("https://p.typekit.net/p.css?s=1&k=mkk7zfs&ht=tk&f=10881.10882.10884.10885.15357.15358.15361.15362.32874.32875&a=50854053&app=typekit&e=css");
+@font-face {
+  font-family: "Reislust";
+  src: local("Reislust"), url("../fonts/Reislust-97D7.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTNormal";
+  src: local("FuturaPTNormal"), url("../fonts/FuturaPTBook.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: local("FuturaPTMedium"), url("../fonts/FuturaPTMedium.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTbold";
+  src: local("FuturaPTbold"), url("../fonts/FuturaPTBold.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTNormalOblique";
+  src: local("FuturaPTNormalOblique"), url("../fonts/FuturaPTBookOblique.otf") format("opentype");
+  font-display: swap;
+}
+p {
+  font-family: "FuturaPTNormal";
+}
+
+h1 {
+  font-family: "Reislust";
+  font-size: 70px;
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 54px;
+  }
+}
+
+label {
+  font-size: 25px;
+  font-family: "FuturaPTbold";
+  font-weight: bold;
+}
+@media (max-width: 1024px) {
+  label {
+    font-size: 16px;
+  }
+}
+
+.wrapperCtc {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  margin-bottom: 6vh;
+  display: flex;
+  width: auto;
+  height: 84vh;
+  background-color: white;
+}
+.wrapperCtc amp-img {
+  height: auto;
+  width: 100vh;
+}
+@media (max-width: 1024px) {
+  .wrapperCtc amp-img {
+    display: none;
+  }
+}
+.wrapperCtc p,
+.wrapperCtc div,
+.wrapperCtc h1,
+.wrapperCtc h2,
+.wrapperCtc label {
+  color: #685950;
+}
+@media (max-width: 1024px) {
+  .wrapperCtc {
+    overflow: hidden;
+    flex-direction: column;
+    height: auto;
+    margin-top: 6vh;
+    width: auto;
+  }
+}
+
+.contactLayout {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  flex-direction: column;
+  column-gap: 3.5vw;
+  margin-top: 5h;
+  margin-bottom: 11vh;
+  margin-left: 3vw;
+  width: auto;
+}
+@media (max-width: 1024px) {
+  .contactLayout {
+    margin-right: 6vw;
+    margin-bottom: 0;
+  }
+}
+.contactLayout h1 {
+  grid-area: 1/1/2/4;
+  font-size: calc(3.5rem + ((1vw - 7.5px) * 1.1966));
+}
+
+.contact {
+  grid-area: 2/1/3/4;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 43% 40% 17%;
+  gap: 2vw;
+}
+@media (max-width: 1024px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.form {
+  grid-area: 1/1/2/2;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 3.5vh;
+}
+@media (max-width: 1024px) {
+  .form {
+    width: 100%;
+  }
+}
+.form .lbl {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  height: 3.8vh;
+  border: none;
+  border-bottom: 1px solid #707070;
+}
+.form ::placeholder {
+  color: #e3e3dc;
+  font-size: 20px;
+  font-family: "FuturaPTNormal";
+}
+@media (max-width: 1024px) {
+  .form ::placeholder {
+    font-size: 14px;
+  }
+}
+.form textarea {
+  margin-top: 1vh;
+  height: 13.5vh;
+  border: 1px solid #707070;
+}
+
+.horaire {
+  grid-area: 1/2/2/3;
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .horaire {
+    margin-top: 6vh;
+    height: auto;
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+}
+.horaire div {
+  line-height: 2;
+  width: 80%;
+  font-size: 20px;
+  font-family: "FuturaPTbold";
+}
+@media (max-width: 1024px) {
+  .horaire div {
+    font-size: 16px;
+    line-height: 3;
+  }
+}
+.horaire .ouverture {
+  font-size: 23px;
+  font-family: "FuturaPTBold";
+  width: auto;
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .horaire .ouverture {
+    font-size: 18px;
+  }
+}
+.horaire p {
+  width: 80%;
+}
+@media (max-width: 1024px) {
+  .horaire p {
+    width: 90%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .horaire div:nth-last-child(2) {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    line-height: 0.8;
+  }
+}
+.bouteilles {
+  grid-area: 1/3/2/4;
+  width: 100%;
+  height: 100%;
+  gap: 5vh;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width: 1024px) {
+  .bouteilles {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+}
+.bouteilles .rouge1 {
+  background: url("../asset/Spargolato_Rouge.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 22vh;
+}
+@media (max-width: 1024px) {
+  .bouteilles .rouge1 {
+    display: none;
+  }
+}
+.bouteilles .rouge12 {
+  background: url("../asset/Primizia_Rouge.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 22vh;
+}
+@media (max-width: 1024px) {
+  .bouteilles .rouge12 {
+    display: none;
+  }
+}
+.bouteilles .rouge13 {
+  background: url("../asset/Laudria_Rouge.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 22vh;
+}
+@media (max-width: 1024px) {
+  .bouteilles .rouge13 {
+    display: none;
+  }
+}
+.bouteilles .rouge21 {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .bouteilles .rouge21 {
+    display: block;
+    background: url("../asset/bouteille-laudria1.webp");
+    background-size: 15vh;
+    background-repeat: no-repeat;
+    height: 15vh;
+    width: 100%;
+    background-position: center;
+    align-self: flex-end;
+  }
+}
+.bouteilles .rouge22 {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .bouteilles .rouge22 {
+    display: block;
+    background: url("../asset/bouteille-primizia1.webp");
+    background-size: 15vh;
+    background-repeat: no-repeat;
+    height: 15vh;
+    width: 100%;
+    background-position: center;
+    align-self: flex-end;
+  }
+}
+.bouteilles .rouge23 {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .bouteilles .rouge23 {
+    display: block;
+    background: url("../asset/bouteille-spargolato1.webp");
+    background-size: 15vh;
+    background-repeat: no-repeat;
+    height: 15vh;
+    width: 100%;
+    background-position: center;
+    align-self: flex-end;
+  }
+}
+
+.envoyer {
+  color: #a8957e;
+  background-color: transparent;
+  border: 2px solid #a8957e;
+  border-radius: 4px;
+  width: auto;
+  justify-self: right;
+  padding: 0.5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  align-self: flex-end;
+  font-size: 20px;
+  font-family: "FuturaPTNormal";
+}
+@media (max-width: 1024px) {
+  .envoyer {
+    color: #a8957e;
+    background-color: transparent;
+    border: 1px solid #a8957e;
+    align-self: center;
+    margin-top: 3vh;
+    font-size: 14px;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+}
+.envoyer .envoyer:hover {
+  color: white;
+  border: none;
+  background-color: #a8957e;
+}
+@media (max-width: 1024px) {
+  .envoyer .envoyer:hover {
+    color: white;
+    border: 1px solid #a8957e;
+    background-color: #a8957e;
+    font-family: "FuturaPTNormal";
+  }
+}
+
+/*# sourceMappingURL=contact.module.css.map */

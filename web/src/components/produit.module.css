@@ -1,0 +1,265 @@
+@import "../pages/normalize.module.css";
+@import url("https://p.typekit.net/p.css?s=1&k=mkk7zfs&ht=tk&f=10881.10882.10884.10885.15357.15358.15361.15362.32874.32875&a=50854053&app=typekit&e=css");
+@font-face {
+  font-family: "Reislust";
+  src: url("../fonts/Reislust-97D7.ttf");
+}
+@font-face {
+  font-family: "FuturaPTNormal";
+  src: url("../fonts/FuturaPTBook.otf");
+}
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: url("../fonts/FuturaPTMedium.otf");
+}
+@font-face {
+  font-family: "FuturaPTbold";
+  src: url("../fonts/FuturaPTBold.otf");
+}
+@font-face {
+  font-family: "FuturaPTNormalOblique";
+  src: url("../fonts/FuturaPTBookOblique.otf");
+}
+em {
+  font-family: "FuturaPTNormalOblique";
+  font-size: 18px;
+}
+@media (max-width: 1024px) {
+  em {
+    font-size: 16px;
+  }
+}
+
+h1 {
+  font-family: "Reislust";
+  font-size: 70px;
+}
+
+body {
+  background-color: #E3E3DC;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.hh {
+  width: auto;
+  height: 10vh;
+}
+
+.wrapperProduit {
+  display: grid;
+  height: 84vh;
+  width: 88vw;
+  grid-template-columns: 5vw auto 60%;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  margin-bottom: 6vh;
+  background-color: white;
+}
+@media (max-width: 1024px) {
+  .wrapperProduit {
+    grid-template-columns: 25vw 40vw 30vw;
+    grid-template-rows: 42% 42% 16%;
+    height: auto;
+    width: auto;
+  }
+}
+.wrapperProduit * {
+  color: #685950;
+}
+.wrapperProduit .bouteille {
+  position: relative;
+  align-self: flex-end;
+  top: 8vh;
+  width: 45vh;
+  height: auto;
+}
+@media (max-width: 1024px) {
+  .wrapperProduit .bouteille {
+    grid-area: 2/3/4/4;
+    align-self: flex-end;
+    width: 30vh;
+    left: 7vw;
+    top: 4vh;
+  }
+}
+@media (max-width: 768px) {
+  .wrapperProduit .bouteille {
+    grid-area: 2/3/4/4;
+    align-self: flex-end;
+    width: 25vh;
+    left: 5vw;
+    right: 3vw;
+    top: 4vh;
+  }
+}
+@media (max-width: 550px) {
+  .wrapperProduit .bouteille {
+    width: 20vh;
+    left: 0;
+    right: 5vw;
+  }
+}
+.wrapperProduit .retour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-decoration: none;
+  margin: 7vh;
+  height: 5vh;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .wrapperProduit .retour {
+    grid-area: 3/1/4/2;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    margin-left: 5vw;
+  }
+}
+@media (max-width: 768px) {
+  .wrapperProduit .retour {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+}
+.wrapperProduit .retour .arrow {
+  font-size: 50px;
+  font-family: "FuturaPTNormal";
+}
+@media (max-width: 1024px) {
+  .wrapperProduit .retour .arrow {
+    justify-self: center;
+  }
+}
+.wrapperProduit .retour .back {
+  height: 100%;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .wrapperProduit .retour .back {
+    align-self: flex-end;
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+  }
+}
+.wrapperProduit .retour .back p {
+  align-self: center;
+  height: auto;
+  font-size: 25px;
+  font-family: "FuturaPTMedium";
+}
+@media (max-width: 1024px) {
+  .wrapperProduit .retour .back p {
+    font-size: 16px;
+  }
+}
+.wrapperProduit .game {
+  align-self: center;
+  margin-right: 8vh;
+  display: block;
+  width: auto;
+  height: auto;
+}
+@media (max-width: 1200px) {
+  .wrapperProduit .game {
+    align-self: flex-start;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapperProduit .game {
+    grid-area: 1/1/3/4;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 80vw;
+    height: 100%;
+    margin-left: 4vw;
+  }
+}
+.wrapperProduit .game .logo {
+  width: 170px;
+  height: auto;
+  margin-top: -12vh;
+  float: right;
+  margin-left: 5vw;
+}
+@media (max-width: 1024px) {
+  .wrapperProduit .game .logo {
+    display: none;
+  }
+}
+.wrapperProduit .game h1 {
+  height: auto;
+  font-size: calc(5.125rem + ((1vw - 12.3px) * 5.812));
+  margin: 0;
+  line-height: 1;
+}
+@media (max-width: 1024px) {
+  .wrapperProduit .game h1 {
+    font-size: 82px;
+  }
+}
+.wrapperProduit .game .desc {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1024px) {
+  .wrapperProduit .game .desc {
+    padding: 0;
+    width: 90%;
+    height: 100%;
+  }
+}
+.wrapperProduit .game .desc p {
+  font-family: "FuturaPTMedium";
+  font-size: 18px;
+  line-height: 1.4;
+}
+@media (max-width: 1024px) {
+  .wrapperProduit .game .desc p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapperProduit .game .desc div p:last-child {
+    width: 70vw;
+  }
+}
+.wrapperProduit .logo2 {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .wrapperProduit .logo2 {
+    grid-area: 3/2/4/3;
+    display: block;
+    width: 142px;
+    height: auto;
+    justify-self: center;
+    align-self: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .wrapperProduit .logo2 {
+    width: 102px;
+  }
+}
+@media (max-width: 550px) {
+  .wrapperProduit .logo2 {
+    width: 82px;
+  }
+}
+
+/*# sourceMappingURL=produit.module.css.map */

@@ -1,0 +1,319 @@
+@import "../pages/normalize.module.css";
+@import url("https://p.typekit.net/p.css?s=1&k=mkk7zfs&ht=tk&f=10881.10882.10884.10885.15357.15358.15361.15362.32874.32875&a=50854053&app=typekit&e=css");
+$color-fontWhite: #e3e3dc;
+$color-fontBrown: #685950;
+$color-backgroundGrey: #d9d9d7;
+$color-backgroundLightGrey: #e3e3dc;
+$color-button: #a8957e;
+$color-line: #707070;
+$font-title: 70px;
+$font-subtitle: 25px;
+$font-text: 20px;
+@font-face {
+  font-family: "Reislust";
+  src: url("../fonts/Reislust-97D7.ttf");
+}
+@font-face {
+  font-family: "FuturaPTNormal";
+  src: url("../fonts/FuturaPTBook.otf");
+}
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: url("../fonts/FuturaPTMedium.otf");
+}
+@font-face {
+  font-family: "FuturaPTBold";
+  src: url("../fonts/FuturaPTBold.otf");
+}
+@font-face {
+  font-family: "FuturaPTNormalOblique";
+  src: url("../fonts/FuturaPTBookOblique.otf");
+}
+
+p {
+  font-family: "FuturaPTNormal";
+  font-size: $font-text;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+h1 {
+  font-family: "Reislust";
+  font-size: $font-title;
+  @media (max-width: 768px) {
+    font-size: 46px;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  .btt {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    a {
+      color: $color-fontBrown;
+      text-decoration: none;
+      width: auto;
+      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      bottom: 10vh;
+      right: 5vw;
+      @media (max-width: 768px) {
+        bottom: 5vh;
+      }
+    }
+    .icon {
+      font-size: 58px;
+    }
+    p {
+      font-size: $font-text;
+    }
+  }
+  .gameBg:nth-child(2n) {
+    background-color: $color-backgroundGrey;
+  }
+  .gameBg {
+    height: 100vh;
+    @media (max-width: 1024px) {
+      height: auto;
+    }
+    @media (max-width: 768px) {
+      height: auto;
+    }
+  }
+}
+.desc {
+  border-top: 2px solid $color-line;
+  border-bottom: 2px solid $color-line;
+  height: 60vh;
+  text-align: center;
+  padding-bottom: 5vh;
+  width: 100%;
+  @media (max-width: 1024px) {
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  * {
+    color: $color-fontBrown;
+  }
+  .title {
+    font-family: "Reislust";
+    font-size: calc(5.125rem + ((1vw - 5.68px) * 19.0972));
+    line-height: 0.5;
+    @media (max-width: 768px) {
+      font-size: 82px;
+      margin-top: 5vh;
+    }
+  }
+  .descText {
+    justify-content: space-around;
+    display: flex;
+    * {
+      line-height: 1.5;
+    }
+    :first-child {
+      width: 60vw;
+      @media (max-width: 768px) {
+        width: 80vw;
+      }
+      h2 {
+        font-family: "FuturaPTMedium";
+        font-size: $font-subtitle;
+        font-weight: normal;
+        line-height: 2;
+        @media (max-width: 768px) {
+          font-family: "FuturaPTBold";
+          font-size: 16px;
+          line-height: 3;
+        }
+      }
+      p {
+        @media (max-width: 768px) {
+          font-family: "FuturaPTMedium";
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .logo {
+    width: 88px;
+    height: auto;
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+}
+
+.game {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  height: 100%;
+  @media (max-width: 1024px) {
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    height: auto;
+  }
+  * {
+    color: $color-fontBrown;
+    line-height: 1.5;
+    @media (max-width: 768px) {
+      line-height: 1;
+    }
+  }
+  .gameBg2 {
+    margin-left: 17vw;
+    margin-right: 17vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25vw auto;
+    @media (max-width: 768px) {
+      margin-left: 6vw;
+      margin-right: 6vw;
+    }
+  }
+  amp-img {
+    width: 359px;
+    height: 720px;
+    @media (max-width: 1024px) {
+      width: 275px;
+      height: 540px;
+    }
+    @media (max-width: 768px) {
+      width: 108px;
+      height: 253px;
+      justify-self: center;
+      align-self: center;
+    }
+  }
+  .gameText {
+    justify-self: center;
+    align-self: center;
+    button {
+      width: auto;
+      height: auto;
+      font-size: $font-text;
+      font-family: "FuturaPTNormal";
+      color: $color-button;
+      border: 3px solid #a8957e;
+      border-radius: 4px;
+      background-color: transparent;
+      margin-top: 5vh;
+      @media (max-width: 1024px) {
+        font-size: 16px;
+      }
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      a {
+        text-decoration: none;
+        color: $color-button;
+        margin: 2vh;
+      }
+    }
+    button:hover {
+      background-color: $color-button;
+      a {
+        color: $color-fontWhite;
+      }
+    }
+  }
+  h2 {
+    font-family: "FuturaPTMedium";
+    font-size: $font-subtitle;
+    font-weight: normal;
+    line-height: 2;
+    @media (max-width: 1024px) {
+      font-size: 18px;
+    }
+    @media (max-width: 768px) {
+      font-family: "FuturaPTBold";
+      font-size: 16px;
+    }
+  }
+  p {
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+    @media (max-width: 768px) {
+      font-family: "FuturaPTMedium";
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+  h1 {
+    line-height: 0;
+  }
+}
+.bandeau {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 30vw 40vw 30vw;
+  align-items: flex-end;
+  width: 100%;
+  height: 30vh;
+  padding: 0;
+  @media (max-width: 1024px) {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-self: flex-end;
+    gap: 5vw;
+    justify-content: center;
+    @media (max-width: 1024px) {
+      height: 25vh;
+      width: 100%;
+      justify-content: center;
+    }
+    @media (max-width: 768px) {
+      height: 15vh;
+      width: 100%;
+      justify-content: center;
+    }
+    @media (max-width: 768px) {
+      a {
+        .btl {
+          width: 84px !important;
+          height: 120px;
+          background-position-y: 0vh !important;
+        }
+      }
+    }
+  }
+  .retour {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-self: right;
+    padding-right: 2vw;
+    * {
+      color: $color-fontBrown;
+    }
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+  .arrow {
+    color: $color-fontBrown;
+    font-size: 58px;
+  }
+  .back {
+    color: $color-fontBrown;
+    font-size: $font-subtitle;
+    font-family: "FuturaPTMedium";
+  }
+}

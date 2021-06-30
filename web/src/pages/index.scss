@@ -1,0 +1,533 @@
+@import "../pages/normalize.module.css";
+@import url("https://p.typekit.net/p.css?s=1&k=mkk7zfs&ht=tk&f=10881.10882.10884.10885.15357.15358.15361.15362.32874.32875&a=50854053&app=typekit&e=css");
+$color-fontWhite: #e3e3dc;
+$color-fontBrown: #685950;
+$color-backgroundGrey: #d9d9d7;
+$color-backgroundLightGrey: #e3e3dc;
+$color-button: #a8957e;
+$color-line: #707070;
+$font-title: 70px;
+$font-subtitle: 25px;
+$font-text: 20px;
+@font-face {
+  font-family: "Reislust";
+  src: local("Reislust"), url("../fonts/Reislust-97D7.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTNormal";
+  src: local("FuturaPTNormal"),
+    url("../fonts/FuturaPTBook.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: local("FuturaPTMedium"),
+    url("../fonts/FuturaPTMedium.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTbold";
+  src: local("FuturaPTbold"),
+    url("../fonts/FuturaPTBold.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaPTNormalOblique";
+  src: local("FuturaPTNormalOblique"),
+    url("../fonts/FuturaPTBookOblique.otf") format("opentype");
+  font-display: swap;
+}
+
+.wrapperAccueil {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-family: "Reislust";
+  font-size: 7.2em;
+  line-height: 1;
+  @media (max-width: 1024px) {
+    font-size: 65px;
+  }
+  @media (max-width: 768px) {
+    font-size: 60px;
+  }
+}
+.section1 {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(19, 19, 19, 0.6) 75%,
+      rgba(226, 226, 226, 0.7) 100%
+    ),
+    url("../asset/accueilvigne.webp");
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  height: 84vh;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  margin-bottom: 6vh;
+  display: grid;
+  grid-template-columns: 35vw 1fr;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 6vw;
+    grid-template-columns: 35vw 1fr;
+    gap: 0;
+    height: 64vh;
+  }
+
+  amp-img {
+    grid-area: 1/1/2/2;
+    position: relative;
+    justify-self: right;
+    width: 50vh;
+    margin-top: 10vh;
+    height: 96vh;
+    @media (max-width: 1024px) {
+      width: 36vh;
+      height: 68vh;
+    }
+    @media (max-width: 580px) {
+      height: 401px;
+      top: 3vh;
+      right: 2vh;
+      width: 162px;
+      align-self: flex-end;
+      transform: none !important;
+    }
+  }
+  .block1 * {
+    color: $color-backgroundGrey;
+  }
+
+  .block1 {
+    justify-self: center;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    align-self: center;
+    box-sizing: border-box;
+    grid-area: 1/2/2/3;
+    @media (max-width: 1024px) {
+      margin: 6vh;
+    }
+    @media (max-width: 580px) {
+      margin: 0 auto;
+      align-self: flex-end;
+      margin-right: 1vw;
+      width: auto;
+      transform: none !important;
+    }
+  }
+  .title {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  div p {
+    line-height: 1.5;
+    font-family: "FuturaPTNormal";
+    font-size: $font-text;
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  div h2 {
+    font-family: "FuturaPTbold";
+    line-height: 2;
+    font-size: 25px;
+    @media (max-width: 1024px) {
+      font-size: 21px;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  .gamme {
+    background-color: transparent;
+    margin-top: 3vh;
+    border: 3px solid #a8957e;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    padding: 0.5vh;
+    @media (max-width: 1024px) {
+      margin-bottom: 5vh;
+      width: auto;
+    }
+    a {
+      text-decoration: none;
+      font-family: "FuturaPTNormal";
+      font-size: $font-text;
+      color: $color-button;
+      margin-right: 2vw;
+      margin-left: 2vw;
+      @media (max-width: 1024px) {
+        font-size: 16px;
+      }
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+  .gamme:hover {
+    background-color: $color-button;
+    .a {
+      color: $color-backgroundLightGrey;
+    }
+  }
+}
+
+.section2 {
+  color: $color-fontWhite;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(19, 19, 19, 0.7) 75%,
+      rgba(226, 226, 226, 0.7) 150%
+    ),
+    url("../asset/background-domaine_res.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+
+  @media (max-width: 1024px) {
+    height: auto;
+    z-index: 0;
+  }
+  @media (max-width: 768px) {
+    height: auto;
+    z-index: 0;
+  }
+
+  .title {
+    line-height: 2;
+  }
+  amp-img {
+    img {
+      width: 310px;
+      height: 310px;
+      border-radius: 100% !important;
+    }
+    @media (max-width: 768px) {
+      width: 144px !important;
+      height: 144px !important;
+    }
+  }
+  .block2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 1024px) {
+      width: 80%;
+      margin-bottom: 5vh;
+    }
+    div {
+      width: 60%;
+      color: $color-fontWhite;
+
+      @media (max-width: 768px) {
+        width: 80%;
+        margin-bottom: 5vh;
+      }
+    }
+    div p {
+      color: $color-fontWhite;
+      line-height: 1.5;
+      font-family: "FuturaPTNormal";
+      font-size: $font-text;
+      @media (max-width: 768px) {
+        font-family: "FuturaPTNormalOblique";
+        font-size: 15px;
+      }
+    }
+    div h2 {
+      color: $color-fontWhite;
+      font-family: "FuturaPTbold";
+      line-height: 3;
+      font-size: 25px;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+    .gamme {
+      background-color: transparent;
+      border: 3px solid #a8957e;
+      margin-top: 4vh;
+      border-radius: 4px;
+      width: auto;
+      height: auto;
+      padding: 0.5vh;
+      @media (max-width: 768px) {
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        width: auto;
+      }
+      a {
+        text-decoration: none;
+        font-family: "FuturaPTNormal";
+        font-size: $font-text;
+        color: $color-button;
+        margin: 2vw;
+        @media (max-width: 768px) {
+          text-indent: -9999px;
+          line-height: 0;
+          font-size: 0px;
+        }
+      }
+      a::after {
+        @media (max-width: 768px) {
+          font-family: "FuturaPTNormal";
+          font-size: 14px;
+          content: "VOIR PLUS";
+          text-indent: 0;
+          display: block;
+          margin-left: 2vw;
+          margin-right: 2vw;
+        }
+      }
+    }
+    .gamme:hover {
+      background-color: $color-button;
+      .a {
+        color: $color-backgroundLightGrey;
+      }
+    }
+  }
+}
+.section3 {
+  background-color: $color-backgroundGrey;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+  }
+  * {
+    color: $color-fontBrown;
+  }
+  .sliderimg {
+    width: 468px;
+    height: 100%;
+    background: url("../asset/accueilnosvins.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+  .sliderContain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1024px) {
+      margin: 0 auto;
+      height: 100vh;
+    }
+    .b0 {
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      border-radius: 15px;
+    }
+
+    .b1 {
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      border-radius: 15px;
+    }
+
+    .b2 {
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      border-radius: 15px;
+    }
+
+    .selected {
+      background-color: #a8957e;
+    }
+
+    .glob {
+      display: flex;
+      width: 13.59vw;
+      justify-content: space-around;
+      margin: 5vh;
+      grid-column: 2;
+    }
+    @media (max-width: 1024px) {
+      .glob {
+        grid-area: 2/1/3/3;
+        align-self: center;
+        justify-content: space-between;
+        justify-self: center;
+        width: 25vw;
+        margin: 0;
+      }
+    }
+    .title {
+      font-size: 100px;
+      margin-left: 10vh;
+      font-family: "Reislust";
+      font-weight: normal;
+      text-align: left;
+      line-height: 1;
+      @media (max-width: 1024px) {
+        font-size: 70px;
+        text-align: center;
+        margin-left: 0;
+      }
+      @media (max-width: 768px) {
+        font-size: 60px;
+      }
+    }
+    .slider {
+      display: grid;
+      grid-template-columns: 5vw auto 5vw;
+      align-items: center;
+      height: 75vh;
+      width: auto;
+      margin-right: 10vh;
+      margin-left: 10vh;
+      @media (max-width: 1024px) {
+        grid-template-columns: 10vw 80vw 10vw;
+        grid-template-rows: 70vh 10vh;
+        width: 100%;
+        height: auto;
+        margin: 0;
+      }
+      @media (max-width: 768px) {
+        svg:first-child {
+          display: none;
+        }
+      }
+      svg {
+        height: auto;
+        width: 100%;
+        @media (max-width: 1024px) {
+          width: 10vw;
+          justify-self: right;
+        }
+        path {
+          color: $color-fontBrown;
+        }
+      }
+    }
+  }
+}
+.section4 {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: 768px) {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  * {
+    color: $color-fontBrown;
+  }
+  .pressimg {
+    width: 43vw;
+    justify-self: right;
+    @media (max-width: 768px) {
+      width: auto;
+    }
+    amp-img {
+      width: auto;
+      height: 100%;
+      @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .pressContain {
+    width: 30vw;
+    margin-right: 5vw;
+    justify-self: right;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  div p {
+    font-family: "FuturaPTNormal";
+    font-size: $font-text;
+    line-height: 1.5;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  div h2 {
+    margin-top: 14vh;
+    font-family: "FuturaPTMedium";
+    font-size: 25px;
+    line-height: 2;
+    @media (max-width: 768px) {
+      margin: 0 auto;
+      font-size: 16px;
+    }
+  }
+  .pressBlock {
+    width: auto;
+    height: 100%;
+    @media (max-width: 768px) {
+      margin: 6vw;
+      height: auto;
+    }
+  }
+  .gamme {
+    background-color: transparent;
+    margin-top: 3vh;
+    border: 3px solid #a8957e;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    padding: 0.5vh;
+    margin-bottom: 10vh;
+    @media (max-width: 768px) {
+      margin-bottom: 5vh;
+      width: auto;
+    }
+    a {
+      text-decoration: none;
+      font-family: "FuturaPTNormal";
+      font-size: $font-text;
+      color: $color-button;
+      margin: 2vw;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+  .gamme:hover {
+    background-color: $color-button;
+    a {
+      color: $color-backgroundLightGrey;
+    }
+  }
+}
