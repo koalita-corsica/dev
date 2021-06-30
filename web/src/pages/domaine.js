@@ -11,7 +11,7 @@ import { mapEdgesToNodes } from "../lib/helpers";
 import * as styles from "../pages/domaine.module.css";
 import { responsiveTitle1 } from "../components/typography.module.css";
 import PortableText from "../components/portableText";
-import laura from "../asset/domainelaura.jpg";
+import laura from "../asset/laura.webp";
 import domainImg1 from "../asset/domainetonneau.jpg";
 import domainImg2 from "../asset/domainevigne.jpg";
 import domainImg3 from "../asset/domainelabo.jpg";

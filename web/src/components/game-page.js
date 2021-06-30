@@ -14,15 +14,6 @@ import { BsArrowUp } from "react-icons/bs";
 import { IoIosArrowBack } from "react-icons/io";
 import { sr } from "date-fns/locale";
 
-const isBrowser = typeof window !== "undefined";
-
-if (isBrowser) {
-  let script = document.createElement("script");
-  script.src = "https://cdn.ampproject.org/v0.js";
-  script.async = true;
-  document.body.appendChild(script);
-}
-
 function GamePage(props) {
   const { title, produits, logo, description, slug } = props;
   console.log(produits);
@@ -53,7 +44,7 @@ function GamePage(props) {
       </div>
       <div className={styles.desc}>
         <p className={styles.title}> {title} </p>
-        <img src={logo.asset.url} alt="" className={styles.logo} />
+        <img src={logo.asset.url} alt="" className={styles.logo} width="88px" height="auto"/>
         <div className={styles.descText}>
           <PortableText blocks={description._rawFr} />
         </div>

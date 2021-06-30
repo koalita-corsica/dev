@@ -82,7 +82,7 @@ const PressePage = (props) => {
                     <h1> {element.node.title.fr} </h1>
                     <div className={styles.block}>
                       <PortableText blocks={element.node.excerpt._rawFr} />
-                      <img src={element.node.mainImage.asset.url} alt="" />
+                      <img src={element.node.mainImage.asset.url} alt="" width="80%" height="auto"/>
                     </div>
                   </div>
                 )}
@@ -100,7 +100,7 @@ const PressePage = (props) => {
                     <h1> {element.node.title.fr} </h1>
                     <div className={styles.block}>
                       <PortableText blocks={element.node.excerpt._rawFr} />
-                      <img src={element.node.mainImage.asset.url} alt="" />
+                      <img src={element.node.mainImage.asset.url} alt="" width="80%" height="auto"/>
                     </div>
                   </div>
                 )}
