@@ -29,7 +29,6 @@ function GamePage(props) {
           {produits.map((item) => (
             <Link to={"#" + `${item.slug.current}`}>
               <div
-                className={styles.btl}
                 style={{
                   background: `url(${item.miniImage.asset.url})`,
                   width: '100px',
